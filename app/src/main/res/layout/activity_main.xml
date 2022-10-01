@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sp_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/sp_circle_im"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_white" />
+
+    <TextView
+        android:id="@+id/sp_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/sub_slogan"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sp_slogan_fake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/alice"
+        android:text="@string/sub_slogan"
+        android:textColor="#00000000"
+        android:textSize="16sp"
+        android:transitionName="sub_heading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sp_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:background="#00000000"
+        android:backgroundTint="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/sp_d"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="D"
+            android:textColor="@color/black"
+            android:textSize="100sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/sp_i"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="I"
+            android:textColor="@color/black"
+            android:textSize="100sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/sp_a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="A"
+            android:textColor="@color/black"
+            android:textSize="100sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/sp_r"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="R"
+            android:textColor="@color/black"
+            android:textSize="100sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/sp_y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/bungee_inline"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="Y"
+            android:textColor="@color/black"
+            android:textSize="100sp"
+            tools:ignore="InvalidId" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
